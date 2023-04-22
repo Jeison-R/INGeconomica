@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valor Presente</title>
+    <link rel="stylesheet" href="../../Styles/Simple/valorPresente.css" />
+  </head>
+  <header>
+    <h1 id="titulo-pagina">Valor Presente Simple</h1>
+  </header>
+  <body>
+    <nav class="nav">
+      <ul class="list">
+        <li class="list__item">
+          <div class="list__button">
+            <img src="../../assets/dashboard.svg" class="list__img" />
+            <a href="../inicio.html" class="nav__link">Inicio</a>
+          </div>
+        </li>
+
+        <li class="list__item list__item--click">
+          <div class="list__button list__button--click">
+            <img src="../../assets/interésSimple.svg" class="list__img" />
+            <a href="#InteréSimple" class="nav__link">Interés simple</a>
+            <img src="../../assets/arrow.svg" class="list__arrow" />
+          </div>
+
+          <ul class="list__show">
+            <li class="list__inside">
+              <a
+                href="../../Paginas/Simple/valor-presente.html"
+                class="nav__link nav__link--inside"
+                >Valor Presente</a
+              >
+            </li>
+
+            <li class="list__inside">
+              <a
+                href="../../Paginas/Simple/valor-futuro.html"
+                class="nav__link nav__link--inside"
+                >Valor Futuro</a
+              >
+            </li>
+
+            <li class="list__inside">
+              <a
+                href="../../Paginas/Simple/interés.html"
+                class="nav__link nav__link--inside"
+                >Interés</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li class="list__item list__item--click">
+          <div class="list__button list__button--click">
+            <img src="../../assets/interesCompuesto.svg" class="list__img" />
+            <a href="#" class="nav__link">Interés compuesto</a>
+            <img src="../../assets/arrow.svg" class="list__arrow" />
+          </div>
+
+          <ul class="list__show">
+            <li class="list__inside">
+              <a
+                href="../../Paginas/Compuesto/valor-presente.html"
+                class="nav__link nav__link--inside"
+                >Valor Presente</a
+              >
+            </li>
+
+            <li class="list__inside">
+              <a
+                href="../../Paginas/Compuesto/valor-futuro.html"
+                class="nav__link nav__link--inside"
+                >Valor Futuro</a
+              >
+            </li>
+
+            <li class="list__inside">
+              <a
+                href="../../Paginas/Compuesto/interés.html"
+                class="nav__link nav__link--inside"
+                >Interés</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li class="list__item list__item--click">
+          <div class="list__button list__button--click">
+            <img src="../../assets/anualidades.svg" class="list__img" />
+            <a href="#" class="nav__link">Anualidades</a>
+            <img src="../../assets/arrow.svg" class="list__arrow" />
+          </div>
+
+          <ul class="list__show">
+            <li class="list__inside">
+              <a href="#" class="nav__link nav__link--inside">Tiempo</a>
+            </li>
+
+            <li class="list__inside">
+              <a href="#" class="nav__link nav__link--inside">Pagos</a>
+            </li>
+
+            <li class="list__inside">
+              <a href="#" class="nav__link nav__link--inside">Iniciación</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="list__item list__item--click">
+          <div class="list__button list__button--click">
+            <img src="../../assets/gradiente.svg" class="list__img" />
+            <a href="#" class="nav__link">Gradiente</a>
+            <img src="../../assets/arrow.svg" class="list__arrow" />
+          </div>
+
+          <ul class="list__show">
+            <li class="list__inside">
+              <a href="#" class="nav__link nav__link--inside">Geometrico</a>
+            </li>
+
+            <li class="list__inside">
+              <a href="#" class="nav__link nav__link--inside">Aritmetico</a>
+            </li>
+          </ul>
+        </li>
+        <div class="content">
+          <div class="top-boxes">
+            <div class="box">
+              <div class="input">
+                <div>
+                  <label for="monto">Monto:</label>
+                  <input type="number" id="monto" />
+                </div>
+                <div>
+                  <label for="tasa">Tasa de Interés:</label>
+                  <input type="number" id="tasa" />
+                </div>
+                <div>
+                  <label for="periodos">Periodos:</label>
+                  <input type="number" id="periodos" />
+                  <br />
+                </div>
+
+                <div>
+                  <label for="unidad-periodo">Unidad de Periodo:</label>
+                  <select id="unidad-periodo">
+                    <option value="anios">Años</option>
+                    <option value="meses">Meses</option>
+                  </select>
+                </div>
+                <button onclick="calcular()">Calcular</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ul>
+    </nav>
+    <script src="../../Scripts/main.js"></script>
+  </body>
+</html>

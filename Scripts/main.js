@@ -35,13 +35,3 @@ listElements.forEach((listElement) => {
     currentOption = listElement
   })
 })
-
-const opcion1 = document.querySelector('#Svalor-presente')
-const titulo = document.querySelector('header h1')
-const contenido = document.querySelector('.content')
-
-function mostrarContenidointeresSimple() {
-  titulo.textContent = 'Interés Simple'
-  contenido.innerHTML = '<div class="boxSValorSimple"></div>'
-}
-opcion1.addEventListener('click', mostrarContenidointeresSimple)
